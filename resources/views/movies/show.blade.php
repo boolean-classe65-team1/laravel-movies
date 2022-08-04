@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 @section('page_title', '#' . $movie['id']. " - ". $movie['title'])
 
 @section('script')

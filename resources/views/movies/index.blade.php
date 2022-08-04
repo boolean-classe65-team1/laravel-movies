@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layouts.base')
 
 @section('page_title', 'Lista Film')
 @section('script')
