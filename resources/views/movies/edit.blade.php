@@ -43,6 +43,6 @@
             </div>
         </div>
         <input type="submit" value="Aggiungi" class="btn btn-primary">
-    <a class="btn btn-secondary" href="{{ route('comics.index') }}" role="button">Annulla</a>
+    <a class="btn btn-secondary" href="{{ route('movies.index') }}" role="button">Annulla</a>
     </form>
 @endsection
