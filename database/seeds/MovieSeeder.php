@@ -91,7 +91,7 @@ class MovieSeeder extends Seeder
             $data->title = $movie['title'];
             $data->original_title = $movie['original_title'];
             $data->nationality = $movie['nationality'];
-            $data->date = $movie['data'];
+            $data->date = $movie['date'];
             $data->vote = $movie['vote'];
 
             $data->save();
