@@ -3,7 +3,7 @@
 @section('page_title')
 
 @section('main_content')
-    <form action="{{ route('movies.store') }}" method="POST">
+    <form action="{{ route('movies.update', $movie->id) }}" method="POST">
         @csrf
         @method('PATCH')
         <h2 class="mb-5">Modifica un film</h2>

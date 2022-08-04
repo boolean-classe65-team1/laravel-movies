@@ -40,7 +40,7 @@ class MovieController extends Controller
     public function store(StoreMovieRequest $request)
     {
         //title  original_title  nationality date  vote
-        $data =  $request->validated();
+        $data =  $request->validate();
 
         $newMovie = new Movie();
 
