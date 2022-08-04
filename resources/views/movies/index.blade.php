@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('base')
 
 @section('page_title', 'Lista Film')
 @section('script')
