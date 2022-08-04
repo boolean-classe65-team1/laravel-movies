@@ -5,6 +5,7 @@
 @section('main_content')
     <form action="{{ route('movies.store') }}" method="POST">
         @csrf
+        @method('PATCH')
         <h2 class="mb-5">Modifica un film</h2>
         <div class="mb-3">
             <label for="titleInput" class="form-label">Titolo</label>
