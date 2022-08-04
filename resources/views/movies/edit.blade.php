@@ -42,7 +42,7 @@
                 {{ $errors->first('vote') }}
             </div>
         </div>
-        <input type="submit" value="Aggiungi" class="btn btn-primary">
+        <input type="submit" value="Modifica" class="btn btn-primary">
     <a class="btn btn-secondary" href="{{ route('movies.index') }}" role="button">Annulla</a>
     </form>
 @endsection
