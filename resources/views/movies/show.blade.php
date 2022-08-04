@@ -33,7 +33,7 @@ $moviePop = $movieObj['results'][0]['popularity'];
                 <img src="{{ $movieImg }}" alt="{{$movie['title']}}" style="width: 200px; height:auto;">
             </div>
             <div>
-                <p class="fs-4">{{ $movieOveview }}</p>
+                <p class="fs-4">{{ $movieOverview }}</p>
                 <div class="d-flex gap-5">
                     <p><i class="fa fa-solid fa-globe text-success"></i> {{ $movie['nationality'] }}</p>
                     <p><i class="fa-solid fa-calendar-check text-primary"></i> {{ $movie['date'] }}</p>
