@@ -88,11 +88,11 @@ class MovieSeeder extends Seeder
         foreach($DbMovies as $movie){
             $data = new Movie();
 
-            $data->tilte = $movie['title'];
-            $data->tilte = $movie['original_title'];
-            $data->tilte = $movie['nationality'];
-            $data->tilte = $movie['data'];
-            $data->tilte = $movie['vote'];
+            $data->title = $movie['title'];
+            $data->original_title = $movie['original_title'];
+            $data->nationality = $movie['nationality'];
+            $data->data = $movie['data'];
+            $data->vote = $movie['vote'];
 
             $data->save();
 
