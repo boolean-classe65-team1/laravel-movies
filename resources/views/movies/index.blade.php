@@ -43,6 +43,6 @@
             </div>
         @endforeach
         
-        <a href="{{ route('movies.create') }}" class="btn btn-success">Aggiungi fumetto</a>
+        <a href="{{ route('movies.create') }}" class="btn btn-success">Aggiungi film</a>
     </div>
 @endsection
