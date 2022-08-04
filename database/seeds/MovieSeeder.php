@@ -67,7 +67,7 @@ class MovieSeeder extends Seeder
                 "original_title"=>" Star Wars" ,
                 "nationality"=>"american",
                 "date"=> "1977-05-25",
-                "vote"=>"10" ,
+                "vote"=>"9.2" ,
             ],
             [
                 "title"=>"E.T. - L'extra terrestre " ,
