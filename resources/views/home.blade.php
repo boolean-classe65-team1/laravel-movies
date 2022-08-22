@@ -14,5 +14,6 @@
 </header>
 <div class="container text-center">
     <h1>Benvenuti nel nostro sito!</h1>
+    <img src="{{ asset('img/team.png') }}" alt="">
 </div>
 @endsection

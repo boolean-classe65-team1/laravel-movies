@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.admin')
 
 @section('page_title', 'Lista Serie')
 @section('script')
