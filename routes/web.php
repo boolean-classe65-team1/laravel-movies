@@ -18,6 +18,18 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::middleware("auth")
+->namespace("Admin")
+->name("admin.")
+->prefix("admin")
+->group(function () {
+
 Route::resource('movies', "MovieController");
 
 Route::resource('tv_series',"TvSeriesController");
+
+
+});
+
+Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();

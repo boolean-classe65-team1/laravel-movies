@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTvSeriesRequest;
 use App\Http\Requests\UpdateTvSeriesRequest;
 use App\TvSeries;
@@ -18,7 +19,7 @@ class TvSeriesController extends Controller
     {
         $tv_series= TvSeries::all();
         
-        return view("tv_series.index", compact('tv_series'));
+        return view("admin.tv_series.index", compact('tv_series'));
     }
 
     /**
@@ -28,7 +29,7 @@ class TvSeriesController extends Controller
      */
     public function create()
     {
-        return view("tv_series.create");
+        return view("admin.tv_series.create");
     }
 
     /**
@@ -47,7 +48,7 @@ class TvSeriesController extends Controller
         $newSeries->fill($data);
         $newSeries->save();
 
-        return redirect()->route("tv_series.show", $newSeries->id);
+        return redirect()->route("admin.tv_series.show", $newSeries->id);
 
     }
 
@@ -61,7 +62,7 @@ class TvSeriesController extends Controller
     {
         $tvShow= TvSeries::findOrFail($id);
 
-        return view("tv_series.show",compact("tvShow"));
+        return view("admin.tv_series.show",compact("tvShow"));
     }
 
     /**
@@ -74,7 +75,7 @@ class TvSeriesController extends Controller
     {
         $tvShow= TvSeries::findOrFail($id);
 
-        return view("tv_series.edit", compact("tvShow"));
+        return view("admin.tv_series.edit", compact("tvShow"));
     }
 
     /**
@@ -91,7 +92,7 @@ class TvSeriesController extends Controller
 
         $tvShow->update($data);
 
-        return redirect()->route("tv_series.show", $tvShow->id);
+        return redirect()->route("admin.tv_series.show", $tvShow->id);
     }
 
     /**
@@ -104,6 +105,6 @@ class TvSeriesController extends Controller
     {
         $tvShow= TvSeries::findOrFail($id);
         $tvShow->delete();
-        return redirect()->route("tv_series.index");
+        return redirect()->route("admin.tv_series.index");
     }
 }
