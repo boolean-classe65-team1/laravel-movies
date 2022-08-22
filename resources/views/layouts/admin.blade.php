@@ -12,10 +12,10 @@
 
 
 <body>
-    <div class="d-flex vh-100">
+    <div class="d-flex vh-100 overflow-hidden">
         @include('admin.partials.sidebar')
 
-        <main class="flex-grow-1">
+        <main class="flex-grow-1 overflow-auto">
             @yield('main_content')
         </main>
     </div>
