@@ -26,7 +26,7 @@ $showPop = $showObj['results'][0]['popularity'];
 
 @section('main_content')
     <div class="container py-3">
-        <a href="{{ route('tv_series.index') }}" class="btn btn-success">Home</a>
+        <a href="{{ route('admin.tv_series.index') }}" class="btn btn-success">Home</a>
         <h1 class="pt-5">{{ $show['title'] }}</h1>
         <h2>({{ $show['original_title'] }})</h2>
         <div class="py-3 d-flex gap-3">
@@ -44,14 +44,14 @@ $showPop = $showObj['results'][0]['popularity'];
         </div>
         <div class="d-flex gap-4">
             <button class="btn btn-danger" onclick="showModal({{$show['id']}})">Elimina</button>
-            <a href="{{route('tv_series.edit', $show['id'])}}" class="btn btn-secondary">Modifica</a>
+            <a href="{{route('admin.tv_series.edit', $show['id'])}}" class="btn btn-secondary">Modifica</a>
         </div>
         <div class="position-absolute w-100 hv-100 bg-danger" id="modal{{$show['id']}}" style="display: none; top:0; bottom:0; right:0; left:0; z-index:10;">
             <div class="w-50 m-auto p-3 bg-light rounded mt-5">
                 <h3>Sei sicuro di voler eliminare "{{$show['title']}}" dal database?</h3>
                 <h4>Non potrai recuperarlo in alcun modo!</h4>
                 <div class="d-flex gap-4 align-items-center">
-                    <form action="{{ route('tv_series.destroy', $show['id']) }}" method="post">
+                    <form action="{{ route('admin.tv_series.destroy', $show['id']) }}" method="post">
                         @csrf
                         @method('DELETE')
                         <input type="submit" value="Sì, elimina" class="btn btn-danger mt-3">
