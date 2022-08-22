@@ -1,6 +1,6 @@
 {{-- COMMENTO CON LETTERE GRANDI YEAH!!! --}}
 
-@extends('layouts.base')
+@extends('layouts.admin')
 
 @section('page_title', 'Lista Film')
 @section('script')
