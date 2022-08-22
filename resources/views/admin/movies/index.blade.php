@@ -1,3 +1,5 @@
+{{-- COMMENTO CON LETTERE GRANDI YEAH!!! --}}
+
 @extends('layouts.base')
 
 @section('page_title', 'Lista Film')
