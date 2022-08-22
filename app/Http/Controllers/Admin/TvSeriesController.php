@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreTvSeriesRequest;
 use App\Http\Requests\UpdateTvSeriesRequest;
 use App\TvSeries;
@@ -18,7 +19,7 @@ class TvSeriesController extends Controller
     {
         $tv_series = TvSeries::all();
         
-        return view("tv_series.index", compact("tv_series"));
+        return view("admin.tv_series.index", compact("tv_series"));
     }
 
     /**
@@ -28,7 +29,7 @@ class TvSeriesController extends Controller
      */
     public function create()
     {
-        return view("tv_series.create");
+        return view("admin.tv_series.create");
     }
 
     /**
@@ -44,7 +45,7 @@ class TvSeriesController extends Controller
 
         $show = TvSeries::create($data);
 
-        return redirect()->route("tv_series.show", $show->id);
+        return redirect()->route("admin.tv_series.show", $show->id);
     }
 
     /**
@@ -56,7 +57,7 @@ class TvSeriesController extends Controller
     public function show($id)
     {
         $show = TvSeries::findOrFail($id);
-        return view("tv_series.show", compact("show"));
+        return view("admin.tv_series.show", compact("show"));
     }
 
     /**
@@ -68,7 +69,7 @@ class TvSeriesController extends Controller
     public function edit($id)
     {
         $show = TvSeries::findOrFail($id);
-        return view("tv_series.edit", compact("show"));
+        return view("admin.tv_series.edit", compact("show"));
     }
 
     /**
@@ -85,7 +86,7 @@ class TvSeriesController extends Controller
 
         $show->update($data);
 
-        return redirect()->route("tv_series.show", $show->id);
+        return redirect()->route("admin.tv_series.show", $show->id);
     }
 
     /**
@@ -98,6 +99,6 @@ class TvSeriesController extends Controller
     {
         $show = TvSeries::findOrFail($id);
         $show->delete();
-        return redirect()->route("tv_series.index");
+        return redirect()->route("admin.tv_series.index");
     }
 }

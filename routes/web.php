@@ -15,12 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('welcome');
 });
 
-Route::resource('movies', "MovieController");
-
-Route::resource('tv_series', "TvSeriesController");
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::middleware("auth")
+->prefix("admin")
+->name("admin.")
+->namespace("Admin")
+->group(function () {
+    Route::resource('movies', "MovieController");
+
+    Route::resource('tv_series', "TvSeriesController");
+});

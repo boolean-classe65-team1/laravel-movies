@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Movie;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreMovieRequest;
@@ -17,7 +18,7 @@ class MovieController extends Controller
     {
         $movies = Movie::all();
 
-        return view("movies.index", compact("movies"));
+        return view("admin.movies.index", compact("movies"));
 
     }
 
@@ -28,7 +29,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        return view("movies.create");
+        return view("admin.movies.create");
     }
 
     /**
@@ -46,7 +47,7 @@ class MovieController extends Controller
 
         $newMovie->fill($data);
         $newMovie->save();
-        return redirect()->route("movies.show", $newMovie->id);
+        return redirect()->route("admin.movies.show", $newMovie->id);
     }
 
     /**
@@ -59,7 +60,7 @@ class MovieController extends Controller
     {
         
 
-        return view("movies.show",compact("movie"));
+        return view("admin.movies.show",compact("movie"));
     }
 
     /**
@@ -70,7 +71,7 @@ class MovieController extends Controller
      */
     public function edit(Movie $movie)
     {
-        return view("movies.edit", compact("movie"));
+        return view("admin.movies.edit", compact("movie"));
     }
 
     /**
@@ -85,7 +86,7 @@ class MovieController extends Controller
         
         $data = $request->validated();
         $movie->update($data);
-        return redirect()->route("movies.show", $movie->id);
+        return redirect()->route("admin.movies.show", $movie->id);
     }
 
     /**
@@ -99,6 +100,6 @@ class MovieController extends Controller
         $movie = Movie::findOrFail($id);
         $movie->delete();
 
-        return redirect()->route("movies.index");
+        return redirect()->route("admin.movies.index");
     }
 }

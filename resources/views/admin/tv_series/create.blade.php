@@ -4,7 +4,7 @@
 
 @section('main_content')
     <div class="container">
-        <form action="{{ route('tv_series.store') }}" method="POST">
+        <form action="{{ route('admin.tv_series.store') }}" method="POST">
             @csrf
             <h2 class="mb-5">Aggiungi una serie</h2>
             <div class="mb-3">
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <input type="submit" value="Aggiungi" class="btn btn-primary">
-            <a class="btn btn-secondary" href="{{ route('tv_series.index') }}" role="button">Annulla</a>
+            <a class="btn btn-secondary" href="{{ route('admin.tv_series.index') }}" role="button">Annulla</a>
         </form>
     </div>
 @endsection

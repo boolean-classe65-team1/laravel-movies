@@ -22,8 +22,8 @@
             <hr>
             <h3>{{ $movie['title'] }}</h3>
             <div class="d-flex align-items-center pt-3 gap-3">
-                <a href="{{ route('movies.show', $movie['id']) }}" class="btn btn-primary">Visualizza</a>
-                <a href="{{ route('movies.edit', $movie['id']) }}" class="btn btn-secondary">Modifica</a>
+                <a href="{{ route('admin.movies.show', $movie['id']) }}" class="btn btn-primary">Visualizza</a>
+                <a href="{{ route('admin.movies.edit', $movie['id']) }}" class="btn btn-secondary">Modifica</a>
                 <button class="btn btn-danger" onclick="showModal({{$movie['id']}})">Elimina</button>
             </div>
             <hr>
@@ -32,7 +32,7 @@
                     <h3>Sei sicuro di voler eliminare "{{$movie['title']}}" dal database?</h3>
                     <h4>Non potrai recuperarlo in alcun modo!</h4>
                     <div class="d-flex gap-4 align-items-center">
-                        <form action="{{ route('movies.destroy', $movie['id']) }}" method="post">
+                        <form action="{{ route('admin.movies.destroy', $movie['id']) }}" method="post">
                             @csrf
                             @method('DELETE')
                             <input type="submit" value="Sì, elimina" class="btn btn-danger mt-3">
@@ -43,6 +43,6 @@
             </div>
         @endforeach
         
-        <a href="{{ route('movies.create') }}" class="btn btn-success">Aggiungi film</a>
+        <a href="{{ route('admin.movies.create') }}" class="btn btn-success">Aggiungi film</a>
     </div>
 @endsection
