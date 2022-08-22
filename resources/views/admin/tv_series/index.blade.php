@@ -22,8 +22,8 @@
             <hr>
             <h3>{{ $show['title'] }}</h3>
             <div class="d-flex align-items-center pt-3 gap-3">
-                <a href="{{ route('tv_series.show', $show['id']) }}" class="btn btn-primary">Visualizza</a>
-                <a href="{{ route('tv_series.edit', $show['id']) }}" class="btn btn-secondary">Modifica</a>
+                <a href="{{ route('admin.tv_series.show', $show['id']) }}" class="btn btn-primary">Visualizza</a>
+                <a href="{{ route('admin.tv_series.edit', $show['id']) }}" class="btn btn-secondary">Modifica</a>
                 <button class="btn btn-danger" onclick="showModal({{$show['id']}})">Elimina</button>
             </div>
             <hr>
@@ -32,7 +32,7 @@
                     <h3>Sei sicuro di voler eliminare "{{$show['title']}}" dal database?</h3>
                     <h4>Non potrai recuperarlo in alcun modo!</h4>
                     <div class="d-flex gap-4 align-items-center">
-                        <form action="{{ route('tv_series.destroy', $show['id']) }}" method="post">
+                        <form action="{{ route('admin.tv_series.destroy', $show['id']) }}" method="post">
                             @csrf
                             @method('DELETE')
                             <input type="submit" value="Sì, elimina" class="btn btn-danger mt-3">
@@ -43,6 +43,6 @@
             </div>
         @endforeach
         
-        <a href="{{ route('tv_series.create') }}" class="btn btn-success">Aggiungi serie</a>
+        <a href="{{ route('admin.tv_series.create') }}" class="btn btn-success">Aggiungi serie</a>
     </div>
 @endsection

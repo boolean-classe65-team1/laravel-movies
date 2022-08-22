@@ -3,7 +3,7 @@
 @section('page_title')
 
 @section('main_content')
-    <form action="{{ route('movies.update', $movie->id) }}" method="POST">
+    <form action="{{ route('admin.movies.update', $movie->id) }}" method="POST">
         @csrf
         @method('PATCH')
         <h2 class="mb-5">Modifica un film</h2>
@@ -43,6 +43,6 @@
             </div>
         </div>
         <input type="submit" value="Modifica" class="btn btn-primary">
-    <a class="btn btn-secondary" href="{{ route('movies.index') }}" role="button">Annulla</a>
+    <a class="btn btn-secondary" href="{{ route('admin.movies.index') }}" role="button">Annulla</a>
     </form>
 @endsection

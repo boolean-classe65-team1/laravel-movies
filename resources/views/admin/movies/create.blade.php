@@ -3,7 +3,7 @@
 @section('page_title')
 
 @section('main_content')
-    <form action="{{ route('movies.store') }}" method="POST">
+    <form action="{{ route('admin.movies.store') }}" method="POST">
         @csrf
         <h2 class="mb-5">Aggiungi un film</h2>
         <div class="mb-3">
@@ -42,6 +42,6 @@
             </div>
         </div>
         <input type="submit" value="Aggiungi" class="btn btn-primary">
-    <a class="btn btn-secondary" href="{{ route('movies.index') }}" role="button">Annulla</a>
+    <a class="btn btn-secondary" href="{{ route('admin.movies.index') }}" role="button">Annulla</a>
     </form>
 @endsection
