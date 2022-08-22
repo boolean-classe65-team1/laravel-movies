@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::resource('movies', "MovieController");
+
+Route::resource('tv_series', "TvSeriesController");
