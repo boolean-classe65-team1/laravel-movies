@@ -21,3 +21,6 @@ Route::get('/', function () {
 Route::resource('movies', "MovieController");
 
 Route::resource('tv_series', "TvSeriesController");
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
