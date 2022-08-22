@@ -20,8 +20,6 @@ class CreateTvSeriesTable extends Migration
             $table->string('nationality',20);
             $table->date('date');
             $table->float('vote', 2,1);
-            $table->integer("seasons");
-            $table->integer("avg_running_time");
             $table->timestamps();
         });
     }
