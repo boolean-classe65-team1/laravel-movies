@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
     header{
         z-index: 10;
-        position: fixed;
+        position: sticky;
         top: 0;
         right: 0;
         left: 0;
