@@ -2241,11 +2241,13 @@ var render = function render() {
     return _c("div", {
       key: Tv_series.id,
       staticClass: "col"
+    }, [_c("div", {
+      staticClass: "card-body"
     }, [_c("router-link", {
       attrs: {
         to: "{ title: TvSeries.index }"
       }
-    }, [_c("h2", [_vm._v(_vm._s(Tv_series.title))]), _vm._v(" "), _c("h3", [_vm._v(_vm._s(Tv_series.original_title))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(Tv_series.nationality))])])], 1);
+    }, [_c("h2", [_vm._v(_vm._s(Tv_series.title))]), _vm._v(" "), _c("h3", [_vm._v(_vm._s(Tv_series.original_title))]), _vm._v(" "), _c("p", [_vm._v(_vm._s(Tv_series.nationality))])])], 1)]);
   }), 0), _vm._v(" "), _c("ul")])]);
 };
 
@@ -2312,7 +2314,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nmain{\n    flex-grow:1;\n    \n    overflow: auto;\n}\n", ""]);
+exports.push([module.i, "\nmain{\r\n    flex-grow:1;\r\n    \r\n    overflow: auto;\n}\r\n", ""]);
 
 // exports
 
@@ -19118,7 +19120,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/felicelaterza/boolean/laravel-movies/resources/js/frontend.js */"./resources/js/frontend.js");
+module.exports = __webpack_require__(/*! D:\Paolo\Documenti Master Boolean\Esercizi Boolean Master\laravel-movies\resources\js\frontend.js */"./resources/js/frontend.js");
 
 
 /***/ })

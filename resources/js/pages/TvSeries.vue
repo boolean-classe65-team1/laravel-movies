@@ -4,11 +4,14 @@
 
         <div class="row">
             <div class="col" v-for="Tv_series in tv_series" :key="Tv_series.id">
-                <router-link to="{ title: TvSeries.index }">
-                    <h2>{{Tv_series.title}}</h2>
-                    <h3>{{Tv_series.original_title}}</h3>
-                    <p>{{Tv_series.nationality}}</p>
-                </router-link>
+                <div class="card-body">
+                    <router-link to="{ title: TvSeries.index }">
+                        <h2>{{Tv_series.title}}</h2>
+                        <h3>{{Tv_series.original_title}}</h3>
+                        <p>{{Tv_series.nationality}}</p>
+                     </router-link>
+                </div>
+                
  
             </div>
         </div>

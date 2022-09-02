@@ -1,7 +1,8 @@
 <template>
   <div class="container">
 
-      <h1>Questa è la nuova home</h1>
+      <h1>Benvenuti nel nostro sito!</h1>
+      <img src="img/team.png" alt="">
     </div>
 
   </div>
