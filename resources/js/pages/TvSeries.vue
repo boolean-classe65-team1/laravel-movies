@@ -9,7 +9,7 @@
                     <h3>{{Tv_series.original_title}}</h3>
                     <p>{{Tv_series.nationality}}</p>
                 </router-link>
-
+ 
             </div>
         </div>
         <ul>
