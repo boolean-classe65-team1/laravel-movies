@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
     header{
         z-index: 10;
         position: fixed;
