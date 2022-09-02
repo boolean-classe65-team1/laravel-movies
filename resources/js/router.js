@@ -4,7 +4,6 @@ import VueRouter from "vue-router"
 import Home from "./pages/Home.vue";
 import Movies from "./pages/Movies.vue";
 import TvSeries from "./pages/TvSeries.vue";
-import PageNotFound from "./pages/PageNotFound.vue";
 
 Vue.use(VueRouter)
 
@@ -55,7 +54,6 @@ const routes = [
   {
     path: "/tv_series", component: TvSeries, name: "tv_series"
   },
-  { path: "*", component: PageNotFound },
 ]
 
 // dobbiamo esportare un istanza di VueRouter() con le eventuali configurazioni
