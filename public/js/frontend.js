@@ -2076,11 +2076,15 @@ var render = function render() {
     }
   }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
     attrs: {
-      to: "{ name:'movies' }"
+      to: {
+        name: "movies"
+      }
     }
   }, [_vm._v("Movies")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
     attrs: {
-      to: "{ name:'tv_series' }"
+      to: {
+        name: "tv_series"
+      }
     }
   }, [_vm._v("Tv Series")])], 1)])])]);
 };

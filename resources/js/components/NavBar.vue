@@ -6,8 +6,8 @@
             </div>
             <ul class="menu list-unstyled d-flex gap-3">
                 <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="{ name:'movies' }">Movies</router-link></li>
-                <li><router-link to="{ name:'tv_series' }">Tv Series</router-link></li>
+                <li><router-link :to="{ name:'movies' }">Movies</router-link></li>
+                <li><router-link :to="{ name:'tv_series' }">Tv Series</router-link></li>
             </ul>
         </div>
     </header>
@@ -26,6 +26,6 @@ export default {
         top: 0;
         right: 0;
         left: 0;
-        
+
     }
 </style>
