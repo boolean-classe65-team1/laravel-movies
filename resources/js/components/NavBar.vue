@@ -1,5 +1,5 @@
 <template>
-    <header class="pt-3 bg-light border-bottom">
+    <header class="pt-3 bg-light border-bottom mb-3">
         <div class="container d-flex justify-content-between">
             <div class="logo">
                 <h1>TEAM 1</h1>
@@ -26,6 +26,5 @@ export default {
         top: 0;
         right: 0;
         left: 0;
-
     }
 </style>
