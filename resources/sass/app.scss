@@ -6,3 +6,15 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+#app {
+    height: 100vh;
+    display: flex;
+
+
+    
+}main{
+        height: 80vh;
+        flex-grow: 1;
+    }

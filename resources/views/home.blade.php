@@ -12,8 +12,11 @@
     </ul>
 </div>
 </header>
-<div class="container text-center">
+<div id="app" class="container text-center">
+
     <h1>Benvenuti nel nostro sito!</h1>
     <img src="{{ asset('img/team.png') }}" alt="">
 </div>
+
+<script src="{{ asset("js/frontend.js") }}"></script>
 @endsection

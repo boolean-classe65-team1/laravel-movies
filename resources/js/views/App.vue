@@ -30,3 +30,10 @@ export default {
   }
 }
 </script>
+
+<style>
+main{
+    flex-grow:1;
+    margin-top: 50px;
+}
+</style>

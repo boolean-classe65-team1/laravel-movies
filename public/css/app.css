@@ -10968,3 +10968,13 @@ a.text-dark:focus {
   }
 }
 
+#app {
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  height: 80vh;
+  flex-grow: 1;
+}
+
