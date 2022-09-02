@@ -2159,7 +2159,12 @@ var staticRenderFns = [function () {
 
   return _c("div", {
     staticClass: "container"
-  }, [_c("h1", [_vm._v("Questa è la nuova home")])]);
+  }, [_c("h1", [_vm._v("Benvenuti nel nostro sito!")]), _vm._v(" "), _c("img", {
+    attrs: {
+      src: "img/team.png",
+      alt: ""
+    }
+  })]);
 }];
 render._withStripped = true;
 
