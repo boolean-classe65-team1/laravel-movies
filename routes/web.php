@@ -33,3 +33,7 @@ Route::middleware("auth")
 
     Route::get('home', 'HomeController@index');
 });
+
+Route::get('{any?}', function () {
+    return view('frontend');
+})->where("any", ".*");
