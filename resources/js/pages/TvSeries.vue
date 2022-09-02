@@ -40,7 +40,7 @@
             }
         },
         mounted(){
-            this.fetchData
+            this.fetchData();
         }
     }
 </script>
