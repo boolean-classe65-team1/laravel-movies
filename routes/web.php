@@ -35,5 +35,5 @@ Route::middleware("auth")
 });
 
 Route::get('{any?}', function () {
-    return view('frontend');
+    return view('home');
 })->where("any", ".*");

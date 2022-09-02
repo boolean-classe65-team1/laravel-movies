@@ -34,6 +34,7 @@ export default {
 <style>
 main{
     flex-grow:1;
-    margin-top: 50px;
+    
+    overflow: auto;
 }
 </style>

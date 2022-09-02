@@ -2312,7 +2312,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nmain{\n    flex-grow:1;\n    margin-top: 50px;\n}\n", ""]);
+exports.push([module.i, "\nmain{\n    flex-grow:1;\n    \n    overflow: auto;\n}\n", ""]);
 
 // exports
 
