@@ -1,13 +1,13 @@
 <template>
-    <header class="py-4 bg-light">
+    <header class="pt-3 bg-light border-bottom">
         <div class="container d-flex justify-content-between">
             <div class="logo">
                 <h1>TEAM 1</h1>
             </div>
             <ul class="menu list-unstyled d-flex gap-3">
-                <li><router-link to="/">Home</router-link></li>
-                <li><router-link :to="{ name:'movies' }">Movies</router-link></li>
-                <li><router-link :to="{ name:'tv_series' }">Tv Series</router-link></li>
+                <li><router-link to="/" class="btn btn-light pe-3">Home</router-link></li>
+                <li><router-link :to="{ name:'movies' }" class="btn btn-light pe-3">Movies</router-link></li>
+                <li><router-link :to="{ name:'tv_series' }" class="btn btn-light pe-3">Tv Series</router-link></li>
             </ul>
         </div>
     </header>
